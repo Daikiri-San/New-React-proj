@@ -19,7 +19,7 @@ const INIT_STATE = {
   loading: false,
 };
 
-const authAdminReducer = (state = INIT_STATE, {type, payload}) => {
+const authAdminReducer = (state = INIT_STATE, { type, payload }) => {
   switch (type) {
     case LOGIN_USER:
       return { ...state, loading: true };

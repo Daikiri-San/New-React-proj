@@ -1,14 +1,15 @@
 import React from "react";
-// import { useSelector } from "react-redux";
-// import { authSelectors } from "../redux/auth";
-// import Spinner from "./Spinner";
+import { useSelector } from "react-redux";
+import Loader from "./Loader";
 
 const Layout = ({ children }) => {
-  // const isLoading = useSelector(authSelectors.getLoading);
+  const isLoading = useSelector(
+    ({ authAdmin, strings }) => authAdmin.loading || strings.loading
+  );
 
   return (
     <div className="layout">
-      {/* {isLoading && <Spinner />} */}
+      {isLoading && <Loader />}
       {children}
     </div>
   );
