@@ -1,0 +1,38 @@
+.user-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 8px;
+
+  &:hover,
+  &:focus,
+  .show > span > & {
+    background-color: $main-inputs-color;
+  }
+
+  div > &__dropdown {
+    display: inline-block;
+  }
+
+  &__name {
+    @extend %main-text;
+    margin-left: 4px;
+  }
+
+  &__avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__arrow {
+    .show > span > div > &--container {
+      transform: rotate(0.5turn);
+    }
+    &--container {
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.sideBarUser {
+  margin: 0 auto 50px;
+  text-align: center;
+
+  &__avatar {
+    margin: 0 auto 5px;
+  }
+
+  &__name {
+    @extend %main-text;
+  }
+}

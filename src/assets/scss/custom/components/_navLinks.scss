@@ -1,0 +1,22 @@
+.navLinks {
+  padding-left: 20%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: $main-font-color;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: tomato;
+    }
+  }
+}

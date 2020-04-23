@@ -1,0 +1,41 @@
+.header {
+  padding: 0 26px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: auto;
+    margin-top: 8px;
+  }
+
+  div > &__search {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 200px;
+    background-color: $main-inputs-color;
+    border: none;
+    margin: 5px 48px 8px 0;
+    border-radius: 8px;
+    outline: none;
+    padding: 8px 20px;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-color-semi-input;
+    }
+
+    &::placeholder {
+      color: $main-font-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

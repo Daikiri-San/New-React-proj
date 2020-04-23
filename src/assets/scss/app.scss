@@ -1,0 +1,23 @@
+//Fonts
+@import "custom/fonts/fonts";
+
+//Core files
+@import "base";
+
+//helpers
+@import "custom/helpers/variables";
+@import "custom/helpers/placeholders.scss";
+
+// Structure
+@import "custom/structure/layout";
+@import "custom/structure/sidebar";
+@import "custom/structure/mainContent";
+@import "custom/structure/header";
+@import "custom/structure/search-form";
+@import "custom/structure/strings-list";
+
+// Components
+@import "custom/components/logo";
+@import "custom/components/sideBarUser";
+@import "custom/components/navLinks";
+@import "custom/components/userMenu";

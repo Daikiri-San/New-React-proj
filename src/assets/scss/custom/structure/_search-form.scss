@@ -1,0 +1,45 @@
+.search-form {
+  margin: 25px 40px 60px;
+  border-bottom: solid 1px $main-font-color;
+
+  div &__button {
+    @extend %main-button;
+  }
+
+  div > &__select {
+    border-radius: 8px;
+    background-color: $main-inputs-color;
+    transition: background-color 0.2s ease;
+    padding-right: 4px;
+    @extend %semi-text;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $bg-color-semi-input;
+    }
+  }
+
+  div > &__input--text {
+    border-radius: 8px;
+    @extend %semi-text;
+  }
+
+  &__text {
+    @extend %form-text;
+    padding-top: 12px;
+  }
+
+  &__input--margins {
+    margin-bottom: 8px;
+  }
+}
+
+.has-squere::before {
+  display: inline-block;
+  background-color: $squere-color;
+  margin-right: 8px;
+  content: "";
+  width: 10px;
+  height: 10px;
+}
