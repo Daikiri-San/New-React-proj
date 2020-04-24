@@ -26,20 +26,16 @@
   }
 
   &__text {
-    @extend %form-text;
+    @extend %main-text;
     padding-top: 12px;
+
+    &--squere {
+      padding-top: 12px;
+      @extend %text-with-squere;
+    }
   }
 
   &__input--margins {
     margin-bottom: 8px;
   }
-}
-
-.has-squere::before {
-  display: inline-block;
-  background-color: $squere-color;
-  margin-right: 8px;
-  content: "";
-  width: 10px;
-  height: 10px;
 }

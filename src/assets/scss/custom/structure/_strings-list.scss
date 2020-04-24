@@ -7,7 +7,7 @@
   }
 
   &__elements {
-    @extend %form-text;
+    @extend %main-text;
     margin-bottom: 24px;
   }
 
@@ -29,6 +29,10 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
+  }
+
+  &__link {
+    @extend %link-item;
   }
 }
 

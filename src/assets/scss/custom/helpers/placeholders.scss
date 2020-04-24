@@ -12,17 +12,42 @@
   font-weight: 500;
 }
 
-%form-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 500;
-}
-
 %main-button {
   @extend %semi-text;
   border-radius: 8px;
   padding: 10px 0;
   width: 140px;
   margin-bottom: 30px;
+}
+
+%link-item {
+  @extend %main-text;
+  text-decoration: none;
+  color: $main-font-color;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $main-hover-color;
+  }
+}
+
+%text-with-squere {
+  @extend %main-text;
+
+  &:before {
+    display: inline-block;
+    background-color: $squere-color;
+    margin-right: 8px;
+    content: "";
+    width: 10px;
+    height: 10px;
+  }
+}
+
+%main-textarea {
+  @extend %main-text;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  resize: none;
+  border-radius: 8px;
 }

@@ -43,7 +43,7 @@ const StringsList = () => {
               <td>{string}</td>
               <td>{hasTranslate.join(", ")}</td>
               <td>
-                <Link to={routesPaths.strings} className="navLinks__item">
+                <Link to={routesPaths.strings} className="strings-list__link">
                   Редактировать
                 </Link>
               </td>

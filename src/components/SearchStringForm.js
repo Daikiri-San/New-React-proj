@@ -127,7 +127,7 @@ const SearchStringForm = () => {
         </FormGroup>
         <FormGroup row>
           <Col className="search-form__input--margins" sm={8} md={4} lg={3}>
-            <p className="search-form__text has-squere">Требуется перевод</p>
+            <p className="search-form__text--squere">Требуется перевод</p>
           </Col>
           <Col className="search-form__input--margins" sm={8} md={4} lg={3}>
             <Input

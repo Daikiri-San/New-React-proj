@@ -6,6 +6,9 @@
   border-radius: 8px;
   transition: background-color 0.2s ease;
   margin-bottom: 8px;
+  @media screen and (min-width: 48em) {
+    margin-bottom: 0;
+  }
 
   &:hover,
   &:focus,

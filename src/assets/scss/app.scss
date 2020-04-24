@@ -15,6 +15,7 @@
 @import "custom/structure/header";
 @import "custom/structure/search-form";
 @import "custom/structure/strings-list";
+@import "custom/structure/makeString";
 
 // Components
 @import "custom/components/logo";
@@ -22,3 +23,5 @@
 @import "custom/components/navLinks";
 @import "custom/components/userMenu";
 @import "custom/components/loader";
+@import "custom/components/stringComment";
+@import "custom/components/stringTranslation";
